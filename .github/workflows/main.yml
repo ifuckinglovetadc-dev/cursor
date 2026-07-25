@@ -1,0 +1,14 @@
+name: Hello World Workflow
+
+# Define o evento que vai disparar a ação (ao fazer um push no repositório)
+on: [push]
+
+jobs:
+  say-hello:
+    # Escolhe o sistema operacional do servidor virtual
+    runs-on: ubuntu-latest
+
+    steps:
+      # Executa um comando simples no terminal do servidor
+      - name: Print Hello World
+        run: echo "Hello, World!"
